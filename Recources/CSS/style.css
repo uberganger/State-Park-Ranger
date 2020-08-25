@@ -19,11 +19,11 @@ a {
 
 body {
     font-family: "Noto Serif";
-    color: #493319;
     font-size: 16px;
     line-height: 28px;
     padding-top: 30px;
-    background-color: #fff;
+    color: #1f1f1d;
+    background-color: rgb(255, 255, 255);
 }  
 
 /* Header */
@@ -57,7 +57,7 @@ body {
 }
 
 
-.nav li {
+.nav-container .nav li {
     display: inline-block;
     margin: 20px 140px 100px 100px;
     font-size: 16px;
@@ -74,4 +74,112 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+/* Quote Section */
+
+.quote-container-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    height: 375px;
+    margin: auto;
+}
+
+.quote-container {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    color: black;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+/* Footers */
+
+.social-footer-container {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(205, 68, 58);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-footer-flower img {
+    display: flex;
+    height: auto;
+    width: 150px;
+    margin-right: 100px;
+    border-radius: 400%;
+    border: 5px solid white;
+}
+
+.social-footer {
+    display: flex;
+    margin-left: 100px;
+
+}
+
+.social-footer i {
+    margin: 70px;
+    color: #ecead5;
+}
+
+footer {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    color: #8f7755;
+    background-color: #281b19;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    display: flex;
+    height: 400px;
+    width: 200px;
+}
+
+.footer-nav .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 38px;
+}
+
+.footer-nav .nav li {
+    margin: 10px;
+}
+
+.footer-contact-container {
+    display: flex;
+    height: 400px;
+    width: 800px;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-logo img{
+    display: flex;
+    width: 700px;
+    height: auto;
+}
+
+.footer-contact {
+    margin-bottom: 50px;
+}
+
+.copyright {
+    align-self: flex-end;
+}
+
+.copyright p {
+    margin-right: 20px ;
 }
