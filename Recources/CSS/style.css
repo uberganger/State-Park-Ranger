@@ -13,8 +13,11 @@ ul {
     list-style-type: none;
   }
 
-a {
+a, h4 {
     color: black;
+    font-family: Poppins;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 body {
@@ -50,19 +53,52 @@ body {
     background-size: cover;
 }
 
-.nav-container {
+.all-nav-container {
+    display: flex;
+    height: 50px;
     width: 100%;
-    display: inline-block;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    margin-top: 30px;
 }
 
+.nav-container {
+    display: flex;
+    width: 60%;
+    max-height: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
-.nav-container .nav li {
-    display: inline-block;
-    margin: 20px 140px 100px 100px;
-    font-size: 16px;
-    color:black;
-    font-style: normal;
+.nav-link-wrapper {
+    text-transform: uppercase;
+    height: 22px;
+    padding: 5px;
+    border-bottom: 1px double transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper-flower img {
+    display: flex;
+    width: 25px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px double black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
 }
 
 .break-img {
@@ -84,7 +120,7 @@ body {
     justify-content: space-around;
     align-items: flex-start;
     width: 90%;
-    height: 375px;
+    height: 450px;
     margin: auto;
 }
 
@@ -93,12 +129,139 @@ body {
     height: 400px;
     width: 300px;
     color: black;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
-/* Footers */
+.quote-container h1 {
+    line-height: 40px;
+}
+
+/* Discography */
+
+.discographys-container {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ecead5;
+}
+
+.title-container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 50px 0px;
+}
+
+.title-container h4 {
+    color: #222222;
+}
+
+.discography-container {
+    display: flex;
+    width: 80%;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-text-wrapper-1 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-image: url(../Images/Sly\ Devil.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-text-wrapper-2 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-image: url(../Images/Days\ Gone.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: transparent;
+    border: transparent;
+    transition: color 0.5s, border ease-out 0.5s;
+    font-size: 40px;
+    width: 300px;
+    height: 300px;
+}
+
+.album-title a:hover {
+    color:rgb(205, 68, 58);
+    border: 5px solid rgb(205, 68, 58);
+    width: 300px;
+    height: 300px;
+}
+
+/* About */
+
+.about-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.about-title {
+    margin-top: 50px;
+}
+
+.about-content-container {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+
+}
+
+.about-img img{
+    width: 500px;
+    height: auto;
+    margin: 30px;
+}
+
+.about-text h1 {
+    font-size: 26px;
+}
+
+.about-text a {
+    color: black;
+    transition: color 0.5s;
+}
+
+.about-text a:hover {
+    color: rgb(205, 68, 58);
+}
+
+/* Pre-Footer */
 
 .social-footer-container {
     display: flex;
@@ -112,10 +275,8 @@ body {
 .social-footer-flower img {
     display: flex;
     height: auto;
-    width: 150px;
+    width: 250px;
     margin-right: 100px;
-    border-radius: 400%;
-    border: 5px solid white;
 }
 
 .social-footer {
@@ -128,6 +289,8 @@ body {
     margin: 70px;
     color: #ecead5;
 }
+
+/* Footer */
 
 footer {
     display: flex;
@@ -157,6 +320,15 @@ footer {
     margin: 10px;
 }
 
+.footer-nav .nav li a {
+    color:  #8f7755;
+    transition: color 0.5s;
+}
+
+.footer-nav .nav li a:hover {
+    color: #ecead5;
+}
+
 .footer-contact-container {
     display: flex;
     height: 400px;
@@ -174,6 +346,10 @@ footer {
 
 .footer-contact {
     margin-bottom: 50px;
+}
+
+.footer-contact h4 {
+    color:  #8f7755;
 }
 
 .copyright {
